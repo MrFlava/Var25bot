@@ -8,6 +8,38 @@ database = Database()
 Base = database.Base
 
 
+class SocialPosition(enum.Enum):
+    employee = 'employee'
+    student = 'student'
+    businessman = 'businessman'
+    pensioner = 'pensioner'
+    working = 'working'
+
+    def to_str(self):
+        if self is SocialPosition.employee:
+            return "Служащий"
+        elif self is SocialPosition.student:
+            return "Учащийся"
+        elif self is SocialPosition.businessman:
+            return "Предприниматель"
+        elif self is SocialPosition.pensioner:
+            return "Пенсионер"
+        elif self is SocialPosition.working:
+            return "Рабочий"
+        else:
+            return "Неизвестно"
+
+
+class DogCompetitions(Base):
+    __tablename__ = 'dog_competitions_association_table'
+
+    dog_id = Column(Integer, ForeignKey('dogs.id'), primary_key=True)
+    dog = relationship("Dog")
+    competition_id = Column(Integer, ForeignKey('competitions.id'), primary_key=True)
+    competition = relationship("Competition")
+    reward = Column(Integer, default=0)
+
+
 class User(Base, BaseUser, UserPermissionsMixin, UserSessionsMixin):
     __tablename__ = 'users'
 
@@ -20,6 +52,59 @@ class User(Base, BaseUser, UserPermissionsMixin, UserSessionsMixin):
             perm = session.query(Permission).get(permission)
             if perm not in self.permissions:
                 self.permissions.append(perm)
+
+
+class DogTrainingClub(Base):
+    __tablename__ = 'dogs_training_club'
+
+    id = Column(Integer, primary_key=True)
+    name = Column(String, nullable=False)
+    district = Column(String, nullable=False)
+    year = Column(Integer, nullable=False)
+    entrance_fee = Column(Integer, nullable=False)
+
+    dogs = relationship("Dog", back_populates='dog_training_club', cascade='all ,delete')
+
+
+class Dog(Base):
+    __tablename__ = 'dogs'
+
+    id = Column(Integer, primary_key=True)
+    nickname = Column(String, nullable=False)
+    breed = Column(String, nullable=False)
+    year = Column(Integer, nullable=False)
+
+    owner_id = Column(Integer, ForeignKey('owners.id'))
+    owner = relationship("Owner", back_populates="dogs")
+
+    dog_training_club_id = Column(Integer, ForeignKey('dogs_training_club.id'))
+    dog_training_club = relationship("DogTrainingClub", back_populates="dogs")
+
+    competitions = relationship("Competition", secondary=DogCompetitions.__table__, back_populates="dogs", lazy='joined')
+
+
+class Owner(Base):
+    __tablename__ = 'owners'
+
+    id = Column(Integer, primary_key=True)
+    FIO = Column(String, nullable=False)
+    social_position = Column(Enum(SocialPosition), default=SocialPosition.student)
+    date_of_birth = Column(DateTime, nullable=False)
+    address = Column(String, nullable=False)
+
+    dogs = relationship("Dog", back_populates='owner', cascade='all ,delete')
+
+
+class Competition(Base):
+    __tablename__ = 'competitions'
+
+    id = Column(Integer, primary_key=True)
+    name = Column(String, nullable=False)
+    date = Column(DateTime, nullable=False)
+    contribution = Column(Integer, nullable=False)
+    viewers_quantity = Column(Integer, nullable=False)
+
+    dogs = relationship("Dog", secondary=DogCompetitions.__table__, lazy='joined')
 
 
 class Permission(BasePermission, Base):
