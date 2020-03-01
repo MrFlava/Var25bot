@@ -8074,3 +8074,136 @@ DETAIL:  Ошибочная строка содержит (2, Иванов И. �
                                                  'Страница 1 из 1'}},
     'update_id': 526837573}" caused error 
 ASK_GAME"
+2020-03-01,23:41:10 src.app ERROR Update "{   '_effective_chat': {   'first_name': 'Влад',
+                           'id': 428129079,
+                           'type': 'private',
+                           'username': 'vlad_vlaad_vlaaad'},
+    '_effective_message': {   'caption_entities': [],
+                              'channel_chat_created': False,
+                              'chat': {   'first_name': 'Влад',
+                                          'id': 428129079,
+                                          'type': 'private',
+                                          'username': 'vlad_vlaad_vlaaad'},
+                              'date': 1583098835,
+                              'delete_chat_photo': False,
+                              'edit_date': 1583098869,
+                              'entities': [   {   'length': 15,
+                                                  'offset': 12,
+                                                  'type': 'bold'},
+                                              {   'length': 15,
+                                                  'offset': 88,
+                                                  'type': 'phone_number'}],
+                              'from': {   'first_name': 'DebugBots',
+                                          'id': 941255018,
+                                          'is_bot': True,
+                                          'username': 'debugbots_bot'},
+                              'group_chat_created': False,
+                              'message_id': 25702,
+                              'new_chat_members': [],
+                              'new_chat_photo': [],
+                              'photo': [],
+                              'reply_markup': {   'inline_keyboard': [   [   {   'callback_data': 'prev_field_club_add_menu',
+                                                                                 'text': '🔼'},
+                                                                             {   'callback_data': 'save_club_add_menu',
+                                                                                 'text': 'Сохранить'},
+                                                                             {   'callback_data': 'reset_field',
+                                                                                 'text': '🧹 '
+                                                                                         'Очистить '
+                                                                                         'поле'},
+                                                                             {   'callback_data': 'next_field_club_add_menu',
+                                                                                 'text': '🔽'}],
+                                                                         [   {   'callback_data': 'field_name',
+                                                                                 'text': '*Назвнаие'}],
+                                                                         [   {   'callback_data': 'field_district',
+                                                                                 'text': '*Район'}],
+                                                                         [   {   'callback_data': 'field_year',
+                                                                                 'text': '*Работает '
+                                                                                         'с'}],
+                                                                         [   {   'callback_data': 'field_phone',
+                                                                                 'text': '*Телефон'}],
+                                                                         [   {   'callback_data': 'field_entrance_fee',
+                                                                                 'text': '*Вступительный '
+                                                                                         'взнос'}],
+                                                                         [   {   'callback_data': 'back_club_add_menu',
+                                                                                 'text': 'Назад'}]]},
+                              'supergroup_chat_created': False,
+                              'text': '〰〰〰〰〰〰〰〰〰〰\n'
+                                      '✍*Назвнаие: Club\n'
+                                      '      *Район: Cool1\n'
+                                      '      *Работает с: 2001\n'
+                                      '      *Телефон: +38-067-6669211\n'
+                                      '      *Вступительный взнос: 10001\n'
+                                      '〰〰〰〰〰〰〰〰〰〰'},
+    '_effective_user': {   'first_name': 'Влад',
+                           'id': 428129079,
+                           'is_bot': False,
+                           'language_code': 'ru',
+                           'username': 'vlad_vlaad_vlaaad'},
+    'callback_query': {   'chat_instance': '-131579262626105576',
+                          'data': 'save_club_add_menu',
+                          'from': {   'first_name': 'Влад',
+                                      'id': 428129079,
+                                      'is_bot': False,
+                                      'language_code': 'ru',
+                                      'username': 'vlad_vlaad_vlaaad'},
+                          'id': '1838800396423684840',
+                          'message': {   'caption_entities': [],
+                                         'channel_chat_created': False,
+                                         'chat': {   'first_name': 'Влад',
+                                                     'id': 428129079,
+                                                     'type': 'private',
+                                                     'username': 'vlad_vlaad_vlaaad'},
+                                         'date': 1583098835,
+                                         'delete_chat_photo': False,
+                                         'edit_date': 1583098869,
+                                         'entities': [   {   'length': 15,
+                                                             'offset': 12,
+                                                             'type': 'bold'},
+                                                         {   'length': 15,
+                                                             'offset': 88,
+                                                             'type': 'phone_number'}],
+                                         'from': {   'first_name': 'DebugBots',
+                                                     'id': 941255018,
+                                                     'is_bot': True,
+                                                     'username': 'debugbots_bot'},
+                                         'group_chat_created': False,
+                                         'message_id': 25702,
+                                         'new_chat_members': [],
+                                         'new_chat_photo': [],
+                                         'photo': [],
+                                         'reply_markup': {   'inline_keyboard': [   [   {   'callback_data': 'prev_field_club_add_menu',
+                                                                                            'text': '🔼'},
+                                                                                        {   'callback_data': 'save_club_add_menu',
+                                                                                            'text': 'Сохранить'},
+                                                                                        {   'callback_data': 'reset_field',
+                                                                                            'text': '🧹 '
+                                                                                                    'Очистить '
+                                                                                                    'поле'},
+                                                                                        {   'callback_data': 'next_field_club_add_menu',
+                                                                                            'text': '🔽'}],
+                                                                                    [   {   'callback_data': 'field_name',
+                                                                                            'text': '*Назвнаие'}],
+                                                                                    [   {   'callback_data': 'field_district',
+                                                                                            'text': '*Район'}],
+                                                                                    [   {   'callback_data': 'field_year',
+                                                                                            'text': '*Работает '
+                                                                                                    'с'}],
+                                                                                    [   {   'callback_data': 'field_phone',
+                                                                                            'text': '*Телефон'}],
+                                                                                    [   {   'callback_data': 'field_entrance_fee',
+                                                                                            'text': '*Вступительный '
+                                                                                                    'взнос'}],
+                                                                                    [   {   'callback_data': 'back_club_add_menu',
+                                                                                            'text': 'Назад'}]]},
+                                         'supergroup_chat_created': False,
+                                         'text': '〰〰〰〰〰〰〰〰〰〰\n'
+                                                 '✍*Назвнаие: Club\n'
+                                                 '      *Район: Cool1\n'
+                                                 '      *Работает с: 2001\n'
+                                                 '      *Телефон: '
+                                                 '+38-067-6669211\n'
+                                                 '      *Вступительный взнос: '
+                                                 '10001\n'
+                                                 '〰〰〰〰〰〰〰〰〰〰'}},
+    'update_id': 526837604}" caused error 
+'DogTrainingClub' object has no attribute 'phone'"

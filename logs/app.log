@@ -12627,3 +12627,872 @@ ASK_GAME"
 2020-03-01,20:52:50 JobQueue DEBUG JobQueue thread stopped
 2020-03-01,20:52:50 telegram.ext.updater DEBUG Stopping Updater and Dispatcher...
 2020-03-01,20:52:50 telegram.ext.updater DEBUG Requesting Dispatcher to stop...
+2020-03-01,23:37:36 telegram.ext.dispatcher DEBUG Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x7f791291ea10>
+2020-03-01,23:37:36 telegram.ext.dispatcher DEBUG Setting singleton dispatcher as None
+2020-03-01,23:37:36 telegram.bot DEBUG Entering: get_me
+2020-03-01,23:37:36 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api.telegram.org
+2020-03-01,23:37:37 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "GET /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getMe HTTP/1.1" 200 194
+2020-03-01,23:37:37 telegram.bot DEBUG {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}
+2020-03-01,23:37:37 telegram.bot DEBUG Exiting: get_me
+2020-03-01,23:37:37 JobQueue DEBUG JobQueue thread started
+2020-03-01,23:37:37 telegram.ext.updater DEBUG Bot:941255018:dispatcher - started
+2020-03-01,23:37:37 telegram.ext.updater DEBUG Bot:941255018:updater - started
+2020-03-01,23:37:37 telegram.ext.updater DEBUG Updater thread started (polling)
+2020-03-01,23:37:37 telegram.ext.updater DEBUG Start network loop retry bootstrap del webhook
+2020-03-01,23:37:37 telegram.bot DEBUG Entering: delete_webhook
+2020-03-01,23:37:37 telegram.ext.dispatcher DEBUG Dispatcher started
+2020-03-01,23:37:37 JobQueue DEBUG Putting job check_blocked_job with t=0
+2020-03-01,23:37:37 JobQueue DEBUG Ticking jobs with t=1583098657.093804
+2020-03-01,23:37:37 root INFO Check blocked users job started...
+2020-03-01,23:37:37 JobQueue DEBUG Peeked at check_blocked_job with t=1583098657.093482
+2020-03-01,23:37:37 src.app INFO Bot started
+2020-03-01,23:37:37 JobQueue DEBUG Running job check_blocked_job
+2020-03-01,23:37:37 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/deleteWebhook HTTP/1.1" 200 68
+2020-03-01,23:37:37 telegram.bot DEBUG True
+2020-03-01,23:37:37 telegram.bot DEBUG Exiting: delete_webhook
+2020-03-01,23:37:37 telegram.ext.updater DEBUG Bootstrap done
+2020-03-01,23:37:37 telegram.ext.updater DEBUG Start network loop retry getting Updates
+2020-03-01,23:37:37 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:37:37 JobQueue DEBUG Putting job check_blocked_job with t=7200
+2020-03-01,23:37:37 JobQueue DEBUG Peeked at check_blocked_job with t=1583105857.093482
+2020-03-01,23:37:37 JobQueue DEBUG Next task isn't due yet. Finished!
+2020-03-01,23:37:37 JobQueue DEBUG Ticking jobs with t=1583098657.155555
+2020-03-01,23:37:37 JobQueue DEBUG Peeked at check_blocked_job with t=1583105857.093482
+2020-03-01,23:37:37 JobQueue DEBUG Next task isn't due yet. Finished!
+2020-03-01,23:37:47 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 23
+2020-03-01,23:37:47 telegram.bot DEBUG No new updates found.
+2020-03-01,23:37:47 telegram.bot DEBUG []
+2020-03-01,23:37:47 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:37:47 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:37:48 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 413
+2020-03-01,23:37:48 telegram.bot DEBUG Getting updates: [526837592]
+2020-03-01,23:37:48 telegram.bot DEBUG [<telegram.update.Update object at 0x7f79017a0250>]
+2020-03-01,23:37:48 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:37:48 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:37:48 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837592, 'message': {'message_id': 25696, 'date': 1583098668, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': '/start', 'entities': [{'type': 'bot_command', 'offset': 0, 'length': 6}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:37:48 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:37:48 telegram.bot DEBUG Entering: send_message
+2020-03-01,23:37:48 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG Starting new HTTPS connection (2): api.telegram.org
+2020-03-01,23:37:48 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/sendMessage HTTP/1.1" 200 775
+2020-03-01,23:37:48 telegram.bot DEBUG {'message_id': 25697, 'date': 1583098668, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': 'Приветствую, я бот для мониторинга кинологических клубов', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': 'Кинологические клубы', 'callback_data': 'dog_training_clubs'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:37:48 telegram.bot DEBUG Exiting: send_message
+2020-03-01,23:37:58 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 23
+2020-03-01,23:37:58 telegram.bot DEBUG No new updates found.
+2020-03-01,23:37:58 telegram.bot DEBUG []
+2020-03-01,23:37:58 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:37:58 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:38:08 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 23
+2020-03-01,23:38:08 telegram.bot DEBUG No new updates found.
+2020-03-01,23:38:08 telegram.bot DEBUG []
+2020-03-01,23:38:08 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:38:08 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:38:18 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 23
+2020-03-01,23:38:18 telegram.bot DEBUG No new updates found.
+2020-03-01,23:38:18 telegram.bot DEBUG []
+2020-03-01,23:38:18 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:38:18 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:38:28 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 23
+2020-03-01,23:38:28 telegram.bot DEBUG No new updates found.
+2020-03-01,23:38:28 telegram.bot DEBUG []
+2020-03-01,23:38:28 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:38:28 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:38:38 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 23
+2020-03-01,23:38:38 telegram.bot DEBUG No new updates found.
+2020-03-01,23:38:38 telegram.bot DEBUG []
+2020-03-01,23:38:38 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:38:38 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:38:48 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 23
+2020-03-01,23:38:48 telegram.bot DEBUG No new updates found.
+2020-03-01,23:38:48 telegram.bot DEBUG []
+2020-03-01,23:38:48 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:38:48 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:38:58 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 23
+2020-03-01,23:38:58 telegram.bot DEBUG No new updates found.
+2020-03-01,23:38:58 telegram.bot DEBUG []
+2020-03-01,23:38:58 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:38:58 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:39:08 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 23
+2020-03-01,23:39:08 telegram.bot DEBUG No new updates found.
+2020-03-01,23:39:08 telegram.bot DEBUG []
+2020-03-01,23:39:08 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:39:08 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:39:18 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 23
+2020-03-01,23:39:18 telegram.bot DEBUG No new updates found.
+2020-03-01,23:39:18 telegram.bot DEBUG []
+2020-03-01,23:39:18 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:39:18 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:39:28 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 23
+2020-03-01,23:39:28 telegram.bot DEBUG No new updates found.
+2020-03-01,23:39:28 telegram.bot DEBUG []
+2020-03-01,23:39:28 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:39:28 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:39:38 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 23
+2020-03-01,23:39:38 telegram.bot DEBUG No new updates found.
+2020-03-01,23:39:38 telegram.bot DEBUG []
+2020-03-01,23:39:38 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:39:38 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:39:48 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 23
+2020-03-01,23:39:48 telegram.bot DEBUG No new updates found.
+2020-03-01,23:39:48 telegram.bot DEBUG []
+2020-03-01,23:39:48 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:39:48 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:39:58 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 23
+2020-03-01,23:39:58 telegram.bot DEBUG No new updates found.
+2020-03-01,23:39:58 telegram.bot DEBUG []
+2020-03-01,23:39:58 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:39:58 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:40:01 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 413
+2020-03-01,23:40:01 telegram.bot DEBUG Getting updates: [526837593]
+2020-03-01,23:40:01 telegram.bot DEBUG [<telegram.update.Update object at 0x7f79010f7210>]
+2020-03-01,23:40:01 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:40:01 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:40:01 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837593, 'message': {'message_id': 25698, 'date': 1583098801, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': '/admin', 'entities': [{'type': 'bot_command', 'offset': 0, 'length': 6}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:40:01 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:40:01 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837593, 'message': {'message_id': 25698, 'date': 1583098801, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': '/admin', 'entities': [{'type': 'bot_command', 'offset': 0, 'length': 6}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}, '_effective_user': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}, '_effective_chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, '_effective_message': {'message_id': 25698, 'date': 1583098801, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': '/admin', 'entities': [{'type': 'bot_command', 'offset': 0, 'length': 6}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:40:01 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:01 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:01 telegram.bot DEBUG Entering: delete_message
+2020-03-01,23:40:01 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/deleteMessage HTTP/1.1" 200 25
+2020-03-01,23:40:01 telegram.bot DEBUG True
+2020-03-01,23:40:01 telegram.bot DEBUG Exiting: delete_message
+2020-03-01,23:40:01 telegram.bot DEBUG Entering: send_message
+2020-03-01,23:40:01 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/sendMessage HTTP/1.1" 200 765
+2020-03-01,23:40:01 telegram.bot DEBUG {'message_id': 25699, 'date': 1583098801, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': 'Админ меню:', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': 'Работа с кинологическими клубами', 'callback_data': 'dog_training_clubs'}], [{'text': 'Вернуться к главному меню', 'callback_data': 'start'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:40:01 telegram.bot DEBUG Exiting: send_message
+2020-03-01,23:40:03 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 1045
+2020-03-01,23:40:03 telegram.bot DEBUG Getting updates: [526837594]
+2020-03-01,23:40:03 telegram.bot DEBUG [<telegram.update.Update object at 0x7f79017a0850>]
+2020-03-01,23:40:03 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:40:03 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:40:03 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837594, 'callback_query': {'id': '1838800395849579587', 'chat_instance': '-131579262626105576', 'message': {'message_id': 25699, 'date': 1583098801, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': 'Админ меню:', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': 'Работа с кинологическими клубами', 'callback_data': 'dog_training_clubs'}], [{'text': 'Вернуться к главному меню', 'callback_data': 'start'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}, 'data': 'dog_training_clubs', 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:40:03 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:03 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:40:03 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:03 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:03 telegram.bot DEBUG Entering: edit_message_text
+2020-03-01,23:40:03 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/editMessageText HTTP/1.1" 200 777
+2020-03-01,23:40:03 telegram.bot DEBUG {'message_id': 25699, 'date': 1583098801, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583098803, 'text': 'Нет никаких данных о кинологических клубах!', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': 'Добавить клуб', 'callback_data': 'add_club'}], [{'text': '🔙 Назад', 'callback_data': 'back_dog_training_clubs_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:40:03 telegram.bot DEBUG Exiting: edit_message_text
+2020-03-01,23:40:03 telegram.bot DEBUG Entering: answer_callback_query
+2020-03-01,23:40:03 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/answerCallbackQuery HTTP/1.1" 200 25
+2020-03-01,23:40:03 telegram.bot DEBUG True
+2020-03-01,23:40:03 telegram.bot DEBUG Exiting: answer_callback_query
+2020-03-01,23:40:03 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 1047
+2020-03-01,23:40:03 telegram.bot DEBUG Getting updates: [526837595]
+2020-03-01,23:40:03 telegram.bot DEBUG [<telegram.update.Update object at 0x7f790111f410>]
+2020-03-01,23:40:03 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:40:03 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:40:03 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837595, 'callback_query': {'id': '1838800394871559198', 'chat_instance': '-131579262626105576', 'message': {'message_id': 25699, 'date': 1583098801, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583098803, 'text': 'Нет никаких данных о кинологических клубах!', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': 'Добавить клуб', 'callback_data': 'add_club'}], [{'text': '🔙 Назад', 'callback_data': 'back_dog_training_clubs_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}, 'data': 'add_club', 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:40:03 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:03 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:40:03 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:03 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:40:03 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:03 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:03 telegram.bot DEBUG Entering: delete_message
+2020-03-01,23:40:03 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/deleteMessage HTTP/1.1" 200 25
+2020-03-01,23:40:03 telegram.bot DEBUG True
+2020-03-01,23:40:03 telegram.bot DEBUG Exiting: delete_message
+2020-03-01,23:40:03 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837595, 'message': {'message_id': 0, 'date': 1583098803, 'chat': {'id': 0, 'type': 'private'}, 'text': '/start', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}, '_effective_user': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}, '_effective_chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}}
+2020-03-01,23:40:03 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:03 telegram.bot DEBUG Entering: delete_message
+2020-03-01,23:40:04 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/deleteMessage HTTP/1.1" 400 86
+2020-03-01,23:40:04 sender WARNING Can't delete interface message: Message to delete not found
+2020-03-01,23:40:04 telegram.bot DEBUG Entering: send_message
+2020-03-01,23:40:04 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/sendMessage HTTP/1.1" 200 775
+2020-03-01,23:40:04 telegram.bot DEBUG {'message_id': 25700, 'date': 1583098804, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': 'Приветствую, я бот для мониторинга кинологических клубов', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': 'Кинологические клубы', 'callback_data': 'dog_training_clubs'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:40:04 telegram.bot DEBUG Exiting: send_message
+2020-03-01,23:40:14 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 23
+2020-03-01,23:40:14 telegram.bot DEBUG No new updates found.
+2020-03-01,23:40:14 telegram.bot DEBUG []
+2020-03-01,23:40:14 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:40:14 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:40:24 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 23
+2020-03-01,23:40:24 telegram.bot DEBUG No new updates found.
+2020-03-01,23:40:24 telegram.bot DEBUG []
+2020-03-01,23:40:24 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:40:24 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:40:30 telegram.ext.updater INFO Received signal 2 (SIGINT), stopping...
+2020-03-01,23:40:30 JobQueue DEBUG JobQueue thread stopped
+2020-03-01,23:40:30 telegram.ext.updater DEBUG Stopping Updater and Dispatcher...
+2020-03-01,23:40:30 telegram.ext.updater DEBUG Requesting Dispatcher to stop...
+2020-03-01,23:40:33 telegram.ext.dispatcher DEBUG Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x7f2b08caf9d0>
+2020-03-01,23:40:33 telegram.ext.dispatcher DEBUG Setting singleton dispatcher as None
+2020-03-01,23:40:33 telegram.bot DEBUG Entering: get_me
+2020-03-01,23:40:33 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api.telegram.org
+2020-03-01,23:40:33 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "GET /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getMe HTTP/1.1" 200 194
+2020-03-01,23:40:33 telegram.bot DEBUG {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}
+2020-03-01,23:40:33 telegram.bot DEBUG Exiting: get_me
+2020-03-01,23:40:33 JobQueue DEBUG JobQueue thread started
+2020-03-01,23:40:33 telegram.ext.updater DEBUG Bot:941255018:dispatcher - started
+2020-03-01,23:40:33 telegram.ext.updater DEBUG Bot:941255018:updater - started
+2020-03-01,23:40:33 telegram.ext.updater DEBUG Updater thread started (polling)
+2020-03-01,23:40:33 telegram.ext.updater DEBUG Start network loop retry bootstrap del webhook
+2020-03-01,23:40:33 telegram.bot DEBUG Entering: delete_webhook
+2020-03-01,23:40:33 telegram.ext.dispatcher DEBUG Dispatcher started
+2020-03-01,23:40:33 JobQueue DEBUG Putting job check_blocked_job with t=0
+2020-03-01,23:40:33 root INFO Check blocked users job started...
+2020-03-01,23:40:33 JobQueue DEBUG Ticking jobs with t=1583098833.552572
+2020-03-01,23:40:33 src.app INFO Bot started
+2020-03-01,23:40:33 JobQueue DEBUG Peeked at check_blocked_job with t=1583098833.551985
+2020-03-01,23:40:33 JobQueue DEBUG Running job check_blocked_job
+2020-03-01,23:40:33 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/deleteWebhook HTTP/1.1" 200 68
+2020-03-01,23:40:33 telegram.bot DEBUG True
+2020-03-01,23:40:33 telegram.bot DEBUG Exiting: delete_webhook
+2020-03-01,23:40:33 telegram.ext.updater DEBUG Bootstrap done
+2020-03-01,23:40:33 telegram.ext.updater DEBUG Start network loop retry getting Updates
+2020-03-01,23:40:33 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:40:33 telegram.bot DEBUG Entering: send_chat_action
+2020-03-01,23:40:33 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG Starting new HTTPS connection (2): api.telegram.org
+2020-03-01,23:40:33 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/sendChatAction HTTP/1.1" 200 25
+2020-03-01,23:40:33 telegram.bot DEBUG True
+2020-03-01,23:40:33 telegram.bot DEBUG Exiting: send_chat_action
+2020-03-01,23:40:33 JobQueue DEBUG Putting job check_blocked_job with t=7200
+2020-03-01,23:40:33 JobQueue DEBUG Peeked at check_blocked_job with t=1583106033.551985
+2020-03-01,23:40:33 JobQueue DEBUG Next task isn't due yet. Finished!
+2020-03-01,23:40:33 JobQueue DEBUG Ticking jobs with t=1583098833.772042
+2020-03-01,23:40:33 JobQueue DEBUG Peeked at check_blocked_job with t=1583106033.551985
+2020-03-01,23:40:33 JobQueue DEBUG Next task isn't due yet. Finished!
+2020-03-01,23:40:35 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 413
+2020-03-01,23:40:35 telegram.bot DEBUG Getting updates: [526837596]
+2020-03-01,23:40:35 telegram.bot DEBUG [<telegram.update.Update object at 0x7f2b0814a590>]
+2020-03-01,23:40:35 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:40:35 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:40:35 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837596, 'message': {'message_id': 25701, 'date': 1583098835, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': '/admin', 'entities': [{'type': 'bot_command', 'offset': 0, 'length': 6}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:40:35 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:35 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:35 telegram.bot DEBUG Entering: send_message
+2020-03-01,23:40:35 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/sendMessage HTTP/1.1" 200 765
+2020-03-01,23:40:35 telegram.bot DEBUG {'message_id': 25702, 'date': 1583098835, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': 'Админ меню:', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': 'Работа с кинологическими клубами', 'callback_data': 'dog_training_clubs'}], [{'text': 'Вернуться к главному меню', 'callback_data': 'start'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:40:35 telegram.bot DEBUG Exiting: send_message
+2020-03-01,23:40:36 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 1045
+2020-03-01,23:40:36 telegram.bot DEBUG Getting updates: [526837597]
+2020-03-01,23:40:36 telegram.bot DEBUG [<telegram.update.Update object at 0x7f2b08121ad0>]
+2020-03-01,23:40:36 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:40:36 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:40:36 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837597, 'callback_query': {'id': '1838800396622837900', 'chat_instance': '-131579262626105576', 'message': {'message_id': 25702, 'date': 1583098835, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': 'Админ меню:', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': 'Работа с кинологическими клубами', 'callback_data': 'dog_training_clubs'}], [{'text': 'Вернуться к главному меню', 'callback_data': 'start'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}, 'data': 'dog_training_clubs', 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:40:36 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:36 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:40:36 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:36 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:36 telegram.bot DEBUG Entering: edit_message_text
+2020-03-01,23:40:36 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/editMessageText HTTP/1.1" 200 777
+2020-03-01,23:40:36 telegram.bot DEBUG {'message_id': 25702, 'date': 1583098835, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583098836, 'text': 'Нет никаких данных о кинологических клубах!', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': 'Добавить клуб', 'callback_data': 'add_club'}], [{'text': '🔙 Назад', 'callback_data': 'back_dog_training_clubs_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:40:36 telegram.bot DEBUG Exiting: edit_message_text
+2020-03-01,23:40:36 telegram.bot DEBUG Entering: answer_callback_query
+2020-03-01,23:40:36 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/answerCallbackQuery HTTP/1.1" 200 25
+2020-03-01,23:40:36 telegram.bot DEBUG True
+2020-03-01,23:40:36 telegram.bot DEBUG Exiting: answer_callback_query
+2020-03-01,23:40:37 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 1047
+2020-03-01,23:40:37 telegram.bot DEBUG Getting updates: [526837598]
+2020-03-01,23:40:37 telegram.bot DEBUG [<telegram.update.Update object at 0x7f2b080bb950>]
+2020-03-01,23:40:37 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:40:37 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:40:37 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837598, 'callback_query': {'id': '1838800396541575875', 'chat_instance': '-131579262626105576', 'message': {'message_id': 25702, 'date': 1583098835, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583098836, 'text': 'Нет никаких данных о кинологических клубах!', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': 'Добавить клуб', 'callback_data': 'add_club'}], [{'text': '🔙 Назад', 'callback_data': 'back_dog_training_clubs_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}, 'data': 'add_club', 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:40:37 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:37 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:40:37 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:37 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:40:37 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:37 telegram.bot DEBUG Entering: edit_message_text
+2020-03-01,23:40:37 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/editMessageText HTTP/1.1" 200 1983
+2020-03-01,23:40:37 telegram.bot DEBUG {'message_id': 25702, 'date': 1583098835, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583098837, 'text': '〰〰〰〰〰〰〰〰〰〰\n✍*Назвнаие: Ожидается ввод...\n      *Район: Пусто\n      *Работает с: 0\n      *Телефон: Пусто\n      *Вступительный взнос: Пусто\n〰〰〰〰〰〰〰〰〰〰', 'entities': [{'type': 'bold', 'offset': 12, 'length': 28}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': '🔼', 'callback_data': 'prev_field_club_add_menu'}, {'text': 'Сохранить', 'callback_data': 'save_club_add_menu'}, {'text': '🧹 Очистить поле', 'callback_data': 'reset_field'}, {'text': '🔽', 'callback_data': 'next_field_club_add_menu'}], [{'text': '*Назвнаие', 'callback_data': 'field_name'}], [{'text': '*Район', 'callback_data': 'field_district'}], [{'text': '*Работает с', 'callback_data': 'field_year'}], [{'text': '*Телефон', 'callback_data': 'field_phone'}], [{'text': '*Вступительный взнос', 'callback_data': 'field_entrance_fee'}], [{'text': 'Назад', 'callback_data': 'back_club_add_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:40:37 telegram.bot DEBUG Exiting: edit_message_text
+2020-03-01,23:40:40 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 353
+2020-03-01,23:40:40 telegram.bot DEBUG Getting updates: [526837599]
+2020-03-01,23:40:40 telegram.bot DEBUG [<telegram.update.Update object at 0x7f2b080cacd0>]
+2020-03-01,23:40:40 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:40:40 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:40:40 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837599, 'message': {'message_id': 25703, 'date': 1583098840, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': 'Club', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:40:40 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:40 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:40:40 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:40 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:40:40 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:40:40 telegram.bot DEBUG Entering: delete_message
+2020-03-01,23:40:41 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/deleteMessage HTTP/1.1" 200 25
+2020-03-01,23:40:41 telegram.bot DEBUG True
+2020-03-01,23:40:41 telegram.bot DEBUG Exiting: delete_message
+2020-03-01,23:40:41 telegram.bot DEBUG Entering: edit_message_text
+2020-03-01,23:40:41 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/editMessageText HTTP/1.1" 200 1957
+2020-03-01,23:40:41 telegram.bot DEBUG {'message_id': 25702, 'date': 1583098835, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583098841, 'text': '〰〰〰〰〰〰〰〰〰〰\n      *Назвнаие: Club\n✍*Район: Ожидается ввод...\n      *Работает с: 0\n      *Телефон: Пусто\n      *Вступительный взнос: Пусто\n〰〰〰〰〰〰〰〰〰〰', 'entities': [{'type': 'bold', 'offset': 34, 'length': 25}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': '🔼', 'callback_data': 'prev_field_club_add_menu'}, {'text': 'Сохранить', 'callback_data': 'save_club_add_menu'}, {'text': '🧹 Очистить поле', 'callback_data': 'reset_field'}, {'text': '🔽', 'callback_data': 'next_field_club_add_menu'}], [{'text': '*Назвнаие', 'callback_data': 'field_name'}], [{'text': '*Район', 'callback_data': 'field_district'}], [{'text': '*Работает с', 'callback_data': 'field_year'}], [{'text': '*Телефон', 'callback_data': 'field_phone'}], [{'text': '*Вступительный взнос', 'callback_data': 'field_entrance_fee'}], [{'text': 'Назад', 'callback_data': 'back_club_add_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:40:41 telegram.bot DEBUG Exiting: edit_message_text
+2020-03-01,23:40:45 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 354
+2020-03-01,23:40:45 telegram.bot DEBUG Getting updates: [526837600]
+2020-03-01,23:40:45 telegram.bot DEBUG [<telegram.update.Update object at 0x7f2b0812e8d0>]
+2020-03-01,23:40:45 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:40:45 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:40:45 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837600, 'message': {'message_id': 25704, 'date': 1583098845, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': 'Cool1', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:40:45 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:45 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:40:45 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:45 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:40:45 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:40:45 telegram.bot DEBUG Entering: delete_message
+2020-03-01,23:40:45 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/deleteMessage HTTP/1.1" 200 25
+2020-03-01,23:40:45 telegram.bot DEBUG True
+2020-03-01,23:40:45 telegram.bot DEBUG Exiting: delete_message
+2020-03-01,23:40:45 telegram.bot DEBUG Entering: edit_message_text
+2020-03-01,23:40:45 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/editMessageText HTTP/1.1" 200 1880
+2020-03-01,23:40:45 telegram.bot DEBUG {'message_id': 25702, 'date': 1583098835, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583098845, 'text': '〰〰〰〰〰〰〰〰〰〰\n      *Назвнаие: Club\n      *Район: Cool1\n✍*Работает с: 0\n      *Телефон: Пусто\n      *Вступительный взнос: Пусто\n〰〰〰〰〰〰〰〰〰〰', 'entities': [{'type': 'bold', 'offset': 54, 'length': 14}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': '🔼', 'callback_data': 'prev_field_club_add_menu'}, {'text': 'Сохранить', 'callback_data': 'save_club_add_menu'}, {'text': '🧹 Очистить поле', 'callback_data': 'reset_field'}, {'text': '🔽', 'callback_data': 'next_field_club_add_menu'}], [{'text': '*Назвнаие', 'callback_data': 'field_name'}], [{'text': '*Район', 'callback_data': 'field_district'}], [{'text': '*Работает с', 'callback_data': 'field_year'}], [{'text': '*Телефон', 'callback_data': 'field_phone'}], [{'text': '*Вступительный взнос', 'callback_data': 'field_entrance_fee'}], [{'text': 'Назад', 'callback_data': 'back_club_add_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:40:45 telegram.bot DEBUG Exiting: edit_message_text
+2020-03-01,23:40:48 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 353
+2020-03-01,23:40:48 telegram.bot DEBUG Getting updates: [526837601]
+2020-03-01,23:40:48 telegram.bot DEBUG [<telegram.update.Update object at 0x7f2b080bbb90>]
+2020-03-01,23:40:48 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:40:48 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:40:48 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837601, 'message': {'message_id': 25705, 'date': 1583098848, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': '2001', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:40:48 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:48 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:40:48 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:40:48 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:40:48 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:40:48 telegram.bot DEBUG Entering: delete_message
+2020-03-01,23:40:48 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/deleteMessage HTTP/1.1" 200 25
+2020-03-01,23:40:48 telegram.bot DEBUG True
+2020-03-01,23:40:48 telegram.bot DEBUG Exiting: delete_message
+2020-03-01,23:40:48 telegram.bot DEBUG Entering: edit_message_text
+2020-03-01,23:40:48 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/editMessageText HTTP/1.1" 200 1935
+2020-03-01,23:40:48 telegram.bot DEBUG {'message_id': 25702, 'date': 1583098835, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583098848, 'text': '〰〰〰〰〰〰〰〰〰〰\n      *Назвнаие: Club\n      *Район: Cool1\n      *Работает с: 2001\n✍*Телефон: Ожидается ввод...\n      *Вступительный взнос: Пусто\n〰〰〰〰〰〰〰〰〰〰', 'entities': [{'type': 'bold', 'offset': 78, 'length': 27}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': '🔼', 'callback_data': 'prev_field_club_add_menu'}, {'text': 'Сохранить', 'callback_data': 'save_club_add_menu'}, {'text': '🧹 Очистить поле', 'callback_data': 'reset_field'}, {'text': '🔽', 'callback_data': 'next_field_club_add_menu'}], [{'text': '*Назвнаие', 'callback_data': 'field_name'}], [{'text': '*Район', 'callback_data': 'field_district'}], [{'text': '*Работает с', 'callback_data': 'field_year'}], [{'text': '*Телефон', 'callback_data': 'field_phone'}], [{'text': '*Вступительный взнос', 'callback_data': 'field_entrance_fee'}], [{'text': 'Назад', 'callback_data': 'back_club_add_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:40:48 telegram.bot DEBUG Exiting: edit_message_text
+2020-03-01,23:40:58 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 23
+2020-03-01,23:40:58 telegram.bot DEBUG No new updates found.
+2020-03-01,23:40:58 telegram.bot DEBUG []
+2020-03-01,23:40:58 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:40:58 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:41:05 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 422
+2020-03-01,23:41:05 telegram.bot DEBUG Getting updates: [526837602]
+2020-03-01,23:41:05 telegram.bot DEBUG [<telegram.update.Update object at 0x7f2b080bbc10>]
+2020-03-01,23:41:05 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:41:05 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:41:05 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837602, 'message': {'message_id': 25706, 'date': 1583098864, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': '+380676669211', 'entities': [{'type': 'phone_number', 'offset': 0, 'length': 13}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:41:05 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:41:05 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:41:05 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:41:05 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:41:05 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:41:05 telegram.bot DEBUG Entering: delete_message
+2020-03-01,23:41:05 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/deleteMessage HTTP/1.1" 200 25
+2020-03-01,23:41:05 telegram.bot DEBUG True
+2020-03-01,23:41:05 telegram.bot DEBUG Exiting: delete_message
+2020-03-01,23:41:05 telegram.bot DEBUG Entering: edit_message_text
+2020-03-01,23:41:05 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/editMessageText HTTP/1.1" 200 1969
+2020-03-01,23:41:05 telegram.bot DEBUG {'message_id': 25702, 'date': 1583098835, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583098865, 'text': '〰〰〰〰〰〰〰〰〰〰\n      *Назвнаие: Club\n      *Район: Cool1\n      *Работает с: 2001\n      *Телефон: +38-067-6669211\n✍*Вступительный взнос: Ожидается ввод...\n〰〰〰〰〰〰〰〰〰〰', 'entities': [{'type': 'phone_number', 'offset': 93, 'length': 15}, {'type': 'bold', 'offset': 110, 'length': 39}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': '🔼', 'callback_data': 'prev_field_club_add_menu'}, {'text': 'Сохранить', 'callback_data': 'save_club_add_menu'}, {'text': '🧹 Очистить поле', 'callback_data': 'reset_field'}, {'text': '🔽', 'callback_data': 'next_field_club_add_menu'}], [{'text': '*Назвнаие', 'callback_data': 'field_name'}], [{'text': '*Район', 'callback_data': 'field_district'}], [{'text': '*Работает с', 'callback_data': 'field_year'}], [{'text': '*Телефон', 'callback_data': 'field_phone'}], [{'text': '*Вступительный взнос', 'callback_data': 'field_entrance_fee'}], [{'text': 'Назад', 'callback_data': 'back_club_add_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:41:05 telegram.bot DEBUG Exiting: edit_message_text
+2020-03-01,23:41:09 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 354
+2020-03-01,23:41:09 telegram.bot DEBUG Getting updates: [526837603]
+2020-03-01,23:41:09 telegram.bot DEBUG [<telegram.update.Update object at 0x7f2b080da310>]
+2020-03-01,23:41:09 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:41:09 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:41:09 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837603, 'message': {'message_id': 25707, 'date': 1583098869, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': '10001', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:41:09 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:41:09 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:41:09 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:41:09 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:41:09 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:41:09 telegram.bot DEBUG Entering: delete_message
+2020-03-01,23:41:09 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/deleteMessage HTTP/1.1" 200 25
+2020-03-01,23:41:09 telegram.bot DEBUG True
+2020-03-01,23:41:09 telegram.bot DEBUG Exiting: delete_message
+2020-03-01,23:41:09 telegram.bot DEBUG Entering: edit_message_text
+2020-03-01,23:41:09 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/editMessageText HTTP/1.1" 200 1891
+2020-03-01,23:41:09 telegram.bot DEBUG {'message_id': 25702, 'date': 1583098835, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583098869, 'text': '〰〰〰〰〰〰〰〰〰〰\n✍*Назвнаие: Club\n      *Район: Cool1\n      *Работает с: 2001\n      *Телефон: +38-067-6669211\n      *Вступительный взнос: 10001\n〰〰〰〰〰〰〰〰〰〰', 'entities': [{'type': 'bold', 'offset': 12, 'length': 15}, {'type': 'phone_number', 'offset': 88, 'length': 15}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': '🔼', 'callback_data': 'prev_field_club_add_menu'}, {'text': 'Сохранить', 'callback_data': 'save_club_add_menu'}, {'text': '🧹 Очистить поле', 'callback_data': 'reset_field'}, {'text': '🔽', 'callback_data': 'next_field_club_add_menu'}], [{'text': '*Назвнаие', 'callback_data': 'field_name'}], [{'text': '*Район', 'callback_data': 'field_district'}], [{'text': '*Работает с', 'callback_data': 'field_year'}], [{'text': '*Телефон', 'callback_data': 'field_phone'}], [{'text': '*Вступительный взнос', 'callback_data': 'field_entrance_fee'}], [{'text': 'Назад', 'callback_data': 'back_club_add_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:41:09 telegram.bot DEBUG Exiting: edit_message_text
+2020-03-01,23:41:10 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 2171
+2020-03-01,23:41:10 telegram.bot DEBUG Getting updates: [526837604]
+2020-03-01,23:41:10 telegram.bot DEBUG [<telegram.update.Update object at 0x7f2b080ca1d0>]
+2020-03-01,23:41:10 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:41:10 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:41:10 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837604, 'callback_query': {'id': '1838800396423684840', 'chat_instance': '-131579262626105576', 'message': {'message_id': 25702, 'date': 1583098835, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583098869, 'text': '〰〰〰〰〰〰〰〰〰〰\n✍*Назвнаие: Club\n      *Район: Cool1\n      *Работает с: 2001\n      *Телефон: +38-067-6669211\n      *Вступительный взнос: 10001\n〰〰〰〰〰〰〰〰〰〰', 'entities': [{'type': 'bold', 'offset': 12, 'length': 15}, {'type': 'phone_number', 'offset': 88, 'length': 15}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': '🔼', 'callback_data': 'prev_field_club_add_menu'}, {'text': 'Сохранить', 'callback_data': 'save_club_add_menu'}, {'text': '🧹 Очистить поле', 'callback_data': 'reset_field'}, {'text': '🔽', 'callback_data': 'next_field_club_add_menu'}], [{'text': '*Назвнаие', 'callback_data': 'field_name'}], [{'text': '*Район', 'callback_data': 'field_district'}], [{'text': '*Работает с', 'callback_data': 'field_year'}], [{'text': '*Телефон', 'callback_data': 'field_phone'}], [{'text': '*Вступительный взнос', 'callback_data': 'field_entrance_fee'}], [{'text': 'Назад', 'callback_data': 'back_club_add_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}, 'data': 'save_club_add_menu', 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:41:10 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:41:10 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:41:10 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:41:10 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:41:10 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:41:10 telegram.bot DEBUG Entering: answer_callback_query
+2020-03-01,23:41:10 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/answerCallbackQuery HTTP/1.1" 200 25
+2020-03-01,23:41:10 telegram.bot DEBUG True
+2020-03-01,23:41:10 telegram.bot DEBUG Exiting: answer_callback_query
+2020-03-01,23:41:10 src.app ERROR Update "{   '_effective_chat': {   'first_name': 'Влад',
+                           'id': 428129079,
+                           'type': 'private',
+                           'username': 'vlad_vlaad_vlaaad'},
+    '_effective_message': {   'caption_entities': [],
+                              'channel_chat_created': False,
+                              'chat': {   'first_name': 'Влад',
+                                          'id': 428129079,
+                                          'type': 'private',
+                                          'username': 'vlad_vlaad_vlaaad'},
+                              'date': 1583098835,
+                              'delete_chat_photo': False,
+                              'edit_date': 1583098869,
+                              'entities': [   {   'length': 15,
+                                                  'offset': 12,
+                                                  'type': 'bold'},
+                                              {   'length': 15,
+                                                  'offset': 88,
+                                                  'type': 'phone_number'}],
+                              'from': {   'first_name': 'DebugBots',
+                                          'id': 941255018,
+                                          'is_bot': True,
+                                          'username': 'debugbots_bot'},
+                              'group_chat_created': False,
+                              'message_id': 25702,
+                              'new_chat_members': [],
+                              'new_chat_photo': [],
+                              'photo': [],
+                              'reply_markup': {   'inline_keyboard': [   [   {   'callback_data': 'prev_field_club_add_menu',
+                                                                                 'text': '🔼'},
+                                                                             {   'callback_data': 'save_club_add_menu',
+                                                                                 'text': 'Сохранить'},
+                                                                             {   'callback_data': 'reset_field',
+                                                                                 'text': '🧹 '
+                                                                                         'Очистить '
+                                                                                         'поле'},
+                                                                             {   'callback_data': 'next_field_club_add_menu',
+                                                                                 'text': '🔽'}],
+                                                                         [   {   'callback_data': 'field_name',
+                                                                                 'text': '*Назвнаие'}],
+                                                                         [   {   'callback_data': 'field_district',
+                                                                                 'text': '*Район'}],
+                                                                         [   {   'callback_data': 'field_year',
+                                                                                 'text': '*Работает '
+                                                                                         'с'}],
+                                                                         [   {   'callback_data': 'field_phone',
+                                                                                 'text': '*Телефон'}],
+                                                                         [   {   'callback_data': 'field_entrance_fee',
+                                                                                 'text': '*Вступительный '
+                                                                                         'взнос'}],
+                                                                         [   {   'callback_data': 'back_club_add_menu',
+                                                                                 'text': 'Назад'}]]},
+                              'supergroup_chat_created': False,
+                              'text': '〰〰〰〰〰〰〰〰〰〰\n'
+                                      '✍*Назвнаие: Club\n'
+                                      '      *Район: Cool1\n'
+                                      '      *Работает с: 2001\n'
+                                      '      *Телефон: +38-067-6669211\n'
+                                      '      *Вступительный взнос: 10001\n'
+                                      '〰〰〰〰〰〰〰〰〰〰'},
+    '_effective_user': {   'first_name': 'Влад',
+                           'id': 428129079,
+                           'is_bot': False,
+                           'language_code': 'ru',
+                           'username': 'vlad_vlaad_vlaaad'},
+    'callback_query': {   'chat_instance': '-131579262626105576',
+                          'data': 'save_club_add_menu',
+                          'from': {   'first_name': 'Влад',
+                                      'id': 428129079,
+                                      'is_bot': False,
+                                      'language_code': 'ru',
+                                      'username': 'vlad_vlaad_vlaaad'},
+                          'id': '1838800396423684840',
+                          'message': {   'caption_entities': [],
+                                         'channel_chat_created': False,
+                                         'chat': {   'first_name': 'Влад',
+                                                     'id': 428129079,
+                                                     'type': 'private',
+                                                     'username': 'vlad_vlaad_vlaaad'},
+                                         'date': 1583098835,
+                                         'delete_chat_photo': False,
+                                         'edit_date': 1583098869,
+                                         'entities': [   {   'length': 15,
+                                                             'offset': 12,
+                                                             'type': 'bold'},
+                                                         {   'length': 15,
+                                                             'offset': 88,
+                                                             'type': 'phone_number'}],
+                                         'from': {   'first_name': 'DebugBots',
+                                                     'id': 941255018,
+                                                     'is_bot': True,
+                                                     'username': 'debugbots_bot'},
+                                         'group_chat_created': False,
+                                         'message_id': 25702,
+                                         'new_chat_members': [],
+                                         'new_chat_photo': [],
+                                         'photo': [],
+                                         'reply_markup': {   'inline_keyboard': [   [   {   'callback_data': 'prev_field_club_add_menu',
+                                                                                            'text': '🔼'},
+                                                                                        {   'callback_data': 'save_club_add_menu',
+                                                                                            'text': 'Сохранить'},
+                                                                                        {   'callback_data': 'reset_field',
+                                                                                            'text': '🧹 '
+                                                                                                    'Очистить '
+                                                                                                    'поле'},
+                                                                                        {   'callback_data': 'next_field_club_add_menu',
+                                                                                            'text': '🔽'}],
+                                                                                    [   {   'callback_data': 'field_name',
+                                                                                            'text': '*Назвнаие'}],
+                                                                                    [   {   'callback_data': 'field_district',
+                                                                                            'text': '*Район'}],
+                                                                                    [   {   'callback_data': 'field_year',
+                                                                                            'text': '*Работает '
+                                                                                                    'с'}],
+                                                                                    [   {   'callback_data': 'field_phone',
+                                                                                            'text': '*Телефон'}],
+                                                                                    [   {   'callback_data': 'field_entrance_fee',
+                                                                                            'text': '*Вступительный '
+                                                                                                    'взнос'}],
+                                                                                    [   {   'callback_data': 'back_club_add_menu',
+                                                                                            'text': 'Назад'}]]},
+                                         'supergroup_chat_created': False,
+                                         'text': '〰〰〰〰〰〰〰〰〰〰\n'
+                                                 '✍*Назвнаие: Club\n'
+                                                 '      *Район: Cool1\n'
+                                                 '      *Работает с: 2001\n'
+                                                 '      *Телефон: '
+                                                 '+38-067-6669211\n'
+                                                 '      *Вступительный взнос: '
+                                                 '10001\n'
+                                                 '〰〰〰〰〰〰〰〰〰〰'}},
+    'update_id': 526837604}" caused error 
+'DogTrainingClub' object has no attribute 'phone'"
+2020-03-01,23:41:20 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 23
+2020-03-01,23:41:20 telegram.bot DEBUG No new updates found.
+2020-03-01,23:41:20 telegram.bot DEBUG []
+2020-03-01,23:41:20 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:41:20 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:41:30 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 23
+2020-03-01,23:41:30 telegram.bot DEBUG No new updates found.
+2020-03-01,23:41:30 telegram.bot DEBUG []
+2020-03-01,23:41:30 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:41:30 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:41:40 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 23
+2020-03-01,23:41:40 telegram.bot DEBUG No new updates found.
+2020-03-01,23:41:40 telegram.bot DEBUG []
+2020-03-01,23:41:40 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:41:40 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:41:50 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 23
+2020-03-01,23:41:50 telegram.bot DEBUG No new updates found.
+2020-03-01,23:41:50 telegram.bot DEBUG []
+2020-03-01,23:41:50 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:41:50 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:42:01 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 23
+2020-03-01,23:42:01 telegram.bot DEBUG No new updates found.
+2020-03-01,23:42:01 telegram.bot DEBUG []
+2020-03-01,23:42:01 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:42:01 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:42:10 telegram.ext.updater INFO Received signal 2 (SIGINT), stopping...
+2020-03-01,23:42:10 JobQueue DEBUG JobQueue thread stopped
+2020-03-01,23:42:10 telegram.ext.updater DEBUG Stopping Updater and Dispatcher...
+2020-03-01,23:42:10 telegram.ext.updater DEBUG Requesting Dispatcher to stop...
+2020-03-01,23:42:21 telegram.ext.dispatcher DEBUG Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x7fa622ef0a10>
+2020-03-01,23:42:21 telegram.ext.dispatcher DEBUG Setting singleton dispatcher as None
+2020-03-01,23:42:21 telegram.bot DEBUG Entering: get_me
+2020-03-01,23:42:21 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api.telegram.org
+2020-03-01,23:42:21 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "GET /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getMe HTTP/1.1" 200 194
+2020-03-01,23:42:21 telegram.bot DEBUG {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}
+2020-03-01,23:42:21 telegram.bot DEBUG Exiting: get_me
+2020-03-01,23:42:21 JobQueue DEBUG JobQueue thread started
+2020-03-01,23:42:21 telegram.ext.updater DEBUG Bot:941255018:dispatcher - started
+2020-03-01,23:42:21 telegram.ext.updater DEBUG Bot:941255018:updater - started
+2020-03-01,23:42:21 telegram.ext.updater DEBUG Updater thread started (polling)
+2020-03-01,23:42:21 telegram.ext.updater DEBUG Start network loop retry bootstrap del webhook
+2020-03-01,23:42:21 telegram.bot DEBUG Entering: delete_webhook
+2020-03-01,23:42:21 telegram.ext.dispatcher DEBUG Dispatcher started
+2020-03-01,23:42:21 JobQueue DEBUG Putting job check_blocked_job with t=0
+2020-03-01,23:42:21 JobQueue DEBUG Ticking jobs with t=1583098941.835115
+2020-03-01,23:42:21 root INFO Check blocked users job started...
+2020-03-01,23:42:21 JobQueue DEBUG Peeked at check_blocked_job with t=1583098941.834827
+2020-03-01,23:42:21 src.app INFO Bot started
+2020-03-01,23:42:21 JobQueue DEBUG Running job check_blocked_job
+2020-03-01,23:42:21 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/deleteWebhook HTTP/1.1" 200 68
+2020-03-01,23:42:21 telegram.bot DEBUG True
+2020-03-01,23:42:21 telegram.bot DEBUG Exiting: delete_webhook
+2020-03-01,23:42:21 telegram.ext.updater DEBUG Bootstrap done
+2020-03-01,23:42:21 telegram.ext.updater DEBUG Start network loop retry getting Updates
+2020-03-01,23:42:21 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:42:21 JobQueue DEBUG Putting job check_blocked_job with t=7200
+2020-03-01,23:42:21 JobQueue DEBUG Peeked at check_blocked_job with t=1583106141.834827
+2020-03-01,23:42:21 JobQueue DEBUG Next task isn't due yet. Finished!
+2020-03-01,23:42:21 JobQueue DEBUG Ticking jobs with t=1583098941.885018
+2020-03-01,23:42:21 JobQueue DEBUG Peeked at check_blocked_job with t=1583106141.834827
+2020-03-01,23:42:21 JobQueue DEBUG Next task isn't due yet. Finished!
+2020-03-01,23:42:22 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 413
+2020-03-01,23:42:22 telegram.bot DEBUG Getting updates: [526837605]
+2020-03-01,23:42:22 telegram.bot DEBUG [<telegram.update.Update object at 0x7fa6205c2a50>]
+2020-03-01,23:42:22 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:42:22 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:42:22 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837605, 'message': {'message_id': 25708, 'date': 1583098942, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': '/start', 'entities': [{'type': 'bot_command', 'offset': 0, 'length': 6}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:42:22 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:42:22 telegram.bot DEBUG Entering: send_message
+2020-03-01,23:42:22 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG Starting new HTTPS connection (2): api.telegram.org
+2020-03-01,23:42:23 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/sendMessage HTTP/1.1" 200 775
+2020-03-01,23:42:23 telegram.bot DEBUG {'message_id': 25709, 'date': 1583098943, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': 'Приветствую, я бот для мониторинга кинологических клубов', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': 'Кинологические клубы', 'callback_data': 'dog_training_clubs'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:42:23 telegram.bot DEBUG Exiting: send_message
+2020-03-01,23:42:26 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 413
+2020-03-01,23:42:26 telegram.bot DEBUG Getting updates: [526837606]
+2020-03-01,23:42:26 telegram.bot DEBUG [<telegram.update.Update object at 0x7fa620131350>]
+2020-03-01,23:42:26 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:42:26 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:42:26 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837606, 'message': {'message_id': 25710, 'date': 1583098946, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': '/admin', 'entities': [{'type': 'bot_command', 'offset': 0, 'length': 6}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:42:26 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:42:26 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837606, 'message': {'message_id': 25710, 'date': 1583098946, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': '/admin', 'entities': [{'type': 'bot_command', 'offset': 0, 'length': 6}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}, '_effective_user': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}, '_effective_chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, '_effective_message': {'message_id': 25710, 'date': 1583098946, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': '/admin', 'entities': [{'type': 'bot_command', 'offset': 0, 'length': 6}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:42:26 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:42:26 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:42:26 telegram.bot DEBUG Entering: delete_message
+2020-03-01,23:42:26 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/deleteMessage HTTP/1.1" 200 25
+2020-03-01,23:42:26 telegram.bot DEBUG True
+2020-03-01,23:42:26 telegram.bot DEBUG Exiting: delete_message
+2020-03-01,23:42:26 telegram.bot DEBUG Entering: send_message
+2020-03-01,23:42:26 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/sendMessage HTTP/1.1" 200 765
+2020-03-01,23:42:26 telegram.bot DEBUG {'message_id': 25711, 'date': 1583098946, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': 'Админ меню:', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': 'Работа с кинологическими клубами', 'callback_data': 'dog_training_clubs'}], [{'text': 'Вернуться к главному меню', 'callback_data': 'start'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:42:26 telegram.bot DEBUG Exiting: send_message
+2020-03-01,23:42:27 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 1045
+2020-03-01,23:42:27 telegram.bot DEBUG Getting updates: [526837607]
+2020-03-01,23:42:27 telegram.bot DEBUG [<telegram.update.Update object at 0x7fa620131a50>]
+2020-03-01,23:42:27 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:42:27 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:42:27 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837607, 'callback_query': {'id': '1838800392793803805', 'chat_instance': '-131579262626105576', 'message': {'message_id': 25711, 'date': 1583098946, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': 'Админ меню:', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': 'Работа с кинологическими клубами', 'callback_data': 'dog_training_clubs'}], [{'text': 'Вернуться к главному меню', 'callback_data': 'start'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}, 'data': 'dog_training_clubs', 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:42:27 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:42:27 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:42:27 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:42:27 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:42:27 telegram.bot DEBUG Entering: edit_message_text
+2020-03-01,23:42:27 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/editMessageText HTTP/1.1" 200 777
+2020-03-01,23:42:27 telegram.bot DEBUG {'message_id': 25711, 'date': 1583098946, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583098947, 'text': 'Нет никаких данных о кинологических клубах!', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': 'Добавить клуб', 'callback_data': 'add_club'}], [{'text': '🔙 Назад', 'callback_data': 'back_dog_training_clubs_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:42:27 telegram.bot DEBUG Exiting: edit_message_text
+2020-03-01,23:42:27 telegram.bot DEBUG Entering: answer_callback_query
+2020-03-01,23:42:27 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/answerCallbackQuery HTTP/1.1" 200 25
+2020-03-01,23:42:27 telegram.bot DEBUG True
+2020-03-01,23:42:27 telegram.bot DEBUG Exiting: answer_callback_query
+2020-03-01,23:42:31 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 1047
+2020-03-01,23:42:31 telegram.bot DEBUG Getting updates: [526837608]
+2020-03-01,23:42:31 telegram.bot DEBUG [<telegram.update.Update object at 0x7fa6200c62d0>]
+2020-03-01,23:42:31 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:42:31 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:42:31 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837608, 'callback_query': {'id': '1838800396147400125', 'chat_instance': '-131579262626105576', 'message': {'message_id': 25711, 'date': 1583098946, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583098947, 'text': 'Нет никаких данных о кинологических клубах!', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': 'Добавить клуб', 'callback_data': 'add_club'}], [{'text': '🔙 Назад', 'callback_data': 'back_dog_training_clubs_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}, 'data': 'add_club', 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:42:31 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:42:31 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:42:31 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:42:31 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:42:31 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:42:31 telegram.bot DEBUG Entering: edit_message_text
+2020-03-01,23:42:31 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/editMessageText HTTP/1.1" 200 1983
+2020-03-01,23:42:31 telegram.bot DEBUG {'message_id': 25711, 'date': 1583098946, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583098951, 'text': '〰〰〰〰〰〰〰〰〰〰\n✍*Назвнаие: Ожидается ввод...\n      *Район: Пусто\n      *Работает с: 0\n      *Телефон: Пусто\n      *Вступительный взнос: Пусто\n〰〰〰〰〰〰〰〰〰〰', 'entities': [{'type': 'bold', 'offset': 12, 'length': 28}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': '🔼', 'callback_data': 'prev_field_club_add_menu'}, {'text': 'Сохранить', 'callback_data': 'save_club_add_menu'}, {'text': '🧹 Очистить поле', 'callback_data': 'reset_field'}, {'text': '🔽', 'callback_data': 'next_field_club_add_menu'}], [{'text': '*Назвнаие', 'callback_data': 'field_name'}], [{'text': '*Район', 'callback_data': 'field_district'}], [{'text': '*Работает с', 'callback_data': 'field_year'}], [{'text': '*Телефон', 'callback_data': 'field_phone'}], [{'text': '*Вступительный взнос', 'callback_data': 'field_entrance_fee'}], [{'text': 'Назад', 'callback_data': 'back_club_add_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:42:31 telegram.bot DEBUG Exiting: edit_message_text
+2020-03-01,23:42:34 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 354
+2020-03-01,23:42:34 telegram.bot DEBUG Getting updates: [526837609]
+2020-03-01,23:42:34 telegram.bot DEBUG [<telegram.update.Update object at 0x7fa6200d8710>]
+2020-03-01,23:42:34 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:42:34 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:42:34 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837609, 'message': {'message_id': 25712, 'date': 1583098954, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': 'Cool1', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:42:34 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:42:34 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:42:34 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:42:34 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:42:34 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:42:34 telegram.bot DEBUG Entering: delete_message
+2020-03-01,23:42:35 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/deleteMessage HTTP/1.1" 200 25
+2020-03-01,23:42:35 telegram.bot DEBUG True
+2020-03-01,23:42:35 telegram.bot DEBUG Exiting: delete_message
+2020-03-01,23:42:35 telegram.bot DEBUG Entering: edit_message_text
+2020-03-01,23:42:35 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/editMessageText HTTP/1.1" 200 1958
+2020-03-01,23:42:35 telegram.bot DEBUG {'message_id': 25711, 'date': 1583098946, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583098955, 'text': '〰〰〰〰〰〰〰〰〰〰\n      *Назвнаие: Cool1\n✍*Район: Ожидается ввод...\n      *Работает с: 0\n      *Телефон: Пусто\n      *Вступительный взнос: Пусто\n〰〰〰〰〰〰〰〰〰〰', 'entities': [{'type': 'bold', 'offset': 35, 'length': 25}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': '🔼', 'callback_data': 'prev_field_club_add_menu'}, {'text': 'Сохранить', 'callback_data': 'save_club_add_menu'}, {'text': '🧹 Очистить поле', 'callback_data': 'reset_field'}, {'text': '🔽', 'callback_data': 'next_field_club_add_menu'}], [{'text': '*Назвнаие', 'callback_data': 'field_name'}], [{'text': '*Район', 'callback_data': 'field_district'}], [{'text': '*Работает с', 'callback_data': 'field_year'}], [{'text': '*Телефон', 'callback_data': 'field_phone'}], [{'text': '*Вступительный взнос', 'callback_data': 'field_entrance_fee'}], [{'text': 'Назад', 'callback_data': 'back_club_add_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:42:35 telegram.bot DEBUG Exiting: edit_message_text
+2020-03-01,23:42:40 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 354
+2020-03-01,23:42:40 telegram.bot DEBUG Getting updates: [526837610]
+2020-03-01,23:42:40 telegram.bot DEBUG [<telegram.update.Update object at 0x7fa620131b90>]
+2020-03-01,23:42:40 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:42:40 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:42:40 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837610, 'message': {'message_id': 25713, 'date': 1583098960, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': 'Cool1', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:42:40 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:42:40 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:42:40 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:42:40 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:42:40 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:42:40 telegram.bot DEBUG Entering: delete_message
+2020-03-01,23:42:40 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/deleteMessage HTTP/1.1" 200 25
+2020-03-01,23:42:40 telegram.bot DEBUG True
+2020-03-01,23:42:40 telegram.bot DEBUG Exiting: delete_message
+2020-03-01,23:42:40 telegram.bot DEBUG Entering: edit_message_text
+2020-03-01,23:42:40 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/editMessageText HTTP/1.1" 200 1881
+2020-03-01,23:42:40 telegram.bot DEBUG {'message_id': 25711, 'date': 1583098946, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583098960, 'text': '〰〰〰〰〰〰〰〰〰〰\n      *Назвнаие: Cool1\n      *Район: Cool1\n✍*Работает с: 0\n      *Телефон: Пусто\n      *Вступительный взнос: Пусто\n〰〰〰〰〰〰〰〰〰〰', 'entities': [{'type': 'bold', 'offset': 55, 'length': 14}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': '🔼', 'callback_data': 'prev_field_club_add_menu'}, {'text': 'Сохранить', 'callback_data': 'save_club_add_menu'}, {'text': '🧹 Очистить поле', 'callback_data': 'reset_field'}, {'text': '🔽', 'callback_data': 'next_field_club_add_menu'}], [{'text': '*Назвнаие', 'callback_data': 'field_name'}], [{'text': '*Район', 'callback_data': 'field_district'}], [{'text': '*Работает с', 'callback_data': 'field_year'}], [{'text': '*Телефон', 'callback_data': 'field_phone'}], [{'text': '*Вступительный взнос', 'callback_data': 'field_entrance_fee'}], [{'text': 'Назад', 'callback_data': 'back_club_add_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:42:40 telegram.bot DEBUG Exiting: edit_message_text
+2020-03-01,23:42:42 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 353
+2020-03-01,23:42:42 telegram.bot DEBUG Getting updates: [526837611]
+2020-03-01,23:42:42 telegram.bot DEBUG [<telegram.update.Update object at 0x7fa6200eaf50>]
+2020-03-01,23:42:42 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:42:42 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:42:42 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837611, 'message': {'message_id': 25714, 'date': 1583098962, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': '2001', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:42:42 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:42:42 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:42:42 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:42:42 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:42:42 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:42:42 telegram.bot DEBUG Entering: delete_message
+2020-03-01,23:42:42 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/deleteMessage HTTP/1.1" 200 25
+2020-03-01,23:42:42 telegram.bot DEBUG True
+2020-03-01,23:42:42 telegram.bot DEBUG Exiting: delete_message
+2020-03-01,23:42:42 telegram.bot DEBUG Entering: edit_message_text
+2020-03-01,23:42:42 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/editMessageText HTTP/1.1" 200 1936
+2020-03-01,23:42:42 telegram.bot DEBUG {'message_id': 25711, 'date': 1583098946, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583098962, 'text': '〰〰〰〰〰〰〰〰〰〰\n      *Назвнаие: Cool1\n      *Район: Cool1\n      *Работает с: 2001\n✍*Телефон: Ожидается ввод...\n      *Вступительный взнос: Пусто\n〰〰〰〰〰〰〰〰〰〰', 'entities': [{'type': 'bold', 'offset': 79, 'length': 27}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': '🔼', 'callback_data': 'prev_field_club_add_menu'}, {'text': 'Сохранить', 'callback_data': 'save_club_add_menu'}, {'text': '🧹 Очистить поле', 'callback_data': 'reset_field'}, {'text': '🔽', 'callback_data': 'next_field_club_add_menu'}], [{'text': '*Назвнаие', 'callback_data': 'field_name'}], [{'text': '*Район', 'callback_data': 'field_district'}], [{'text': '*Работает с', 'callback_data': 'field_year'}], [{'text': '*Телефон', 'callback_data': 'field_phone'}], [{'text': '*Вступительный взнос', 'callback_data': 'field_entrance_fee'}], [{'text': 'Назад', 'callback_data': 'back_club_add_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:42:42 telegram.bot DEBUG Exiting: edit_message_text
+2020-03-01,23:42:46 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 422
+2020-03-01,23:42:46 telegram.bot DEBUG Getting updates: [526837612]
+2020-03-01,23:42:46 telegram.bot DEBUG [<telegram.update.Update object at 0x7fa6200d89d0>]
+2020-03-01,23:42:46 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:42:46 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:42:46 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837612, 'message': {'message_id': 25715, 'date': 1583098966, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': '+380669551111', 'entities': [{'type': 'phone_number', 'offset': 0, 'length': 13}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:42:46 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:42:46 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:42:46 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:42:46 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:42:46 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:42:46 telegram.bot DEBUG Entering: delete_message
+2020-03-01,23:42:47 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/deleteMessage HTTP/1.1" 200 25
+2020-03-01,23:42:47 telegram.bot DEBUG True
+2020-03-01,23:42:47 telegram.bot DEBUG Exiting: delete_message
+2020-03-01,23:42:47 telegram.bot DEBUG Entering: edit_message_text
+2020-03-01,23:42:47 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/editMessageText HTTP/1.1" 200 1970
+2020-03-01,23:42:47 telegram.bot DEBUG {'message_id': 25711, 'date': 1583098946, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583098967, 'text': '〰〰〰〰〰〰〰〰〰〰\n      *Назвнаие: Cool1\n      *Район: Cool1\n      *Работает с: 2001\n      *Телефон: +38-066-9551111\n✍*Вступительный взнос: Ожидается ввод...\n〰〰〰〰〰〰〰〰〰〰', 'entities': [{'type': 'phone_number', 'offset': 94, 'length': 15}, {'type': 'bold', 'offset': 111, 'length': 39}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': '🔼', 'callback_data': 'prev_field_club_add_menu'}, {'text': 'Сохранить', 'callback_data': 'save_club_add_menu'}, {'text': '🧹 Очистить поле', 'callback_data': 'reset_field'}, {'text': '🔽', 'callback_data': 'next_field_club_add_menu'}], [{'text': '*Назвнаие', 'callback_data': 'field_name'}], [{'text': '*Район', 'callback_data': 'field_district'}], [{'text': '*Работает с', 'callback_data': 'field_year'}], [{'text': '*Телефон', 'callback_data': 'field_phone'}], [{'text': '*Вступительный взнос', 'callback_data': 'field_entrance_fee'}], [{'text': 'Назад', 'callback_data': 'back_club_add_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:42:47 telegram.bot DEBUG Exiting: edit_message_text
+2020-03-01,23:42:48 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 353
+2020-03-01,23:42:48 telegram.bot DEBUG Getting updates: [526837613]
+2020-03-01,23:42:48 telegram.bot DEBUG [<telegram.update.Update object at 0x7fa6200d84d0>]
+2020-03-01,23:42:48 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:42:48 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:42:48 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837613, 'message': {'message_id': 25716, 'date': 1583098968, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': '2000', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:42:48 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:42:48 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:42:48 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:42:48 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:42:48 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:42:48 telegram.bot DEBUG Entering: delete_message
+2020-03-01,23:42:49 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/deleteMessage HTTP/1.1" 200 25
+2020-03-01,23:42:49 telegram.bot DEBUG True
+2020-03-01,23:42:49 telegram.bot DEBUG Exiting: delete_message
+2020-03-01,23:42:49 telegram.bot DEBUG Entering: edit_message_text
+2020-03-01,23:42:49 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/editMessageText HTTP/1.1" 200 1891
+2020-03-01,23:42:49 telegram.bot DEBUG {'message_id': 25711, 'date': 1583098946, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583098969, 'text': '〰〰〰〰〰〰〰〰〰〰\n✍*Назвнаие: Cool1\n      *Район: Cool1\n      *Работает с: 2001\n      *Телефон: +38-066-9551111\n      *Вступительный взнос: 2000\n〰〰〰〰〰〰〰〰〰〰', 'entities': [{'type': 'bold', 'offset': 12, 'length': 16}, {'type': 'phone_number', 'offset': 89, 'length': 15}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': '🔼', 'callback_data': 'prev_field_club_add_menu'}, {'text': 'Сохранить', 'callback_data': 'save_club_add_menu'}, {'text': '🧹 Очистить поле', 'callback_data': 'reset_field'}, {'text': '🔽', 'callback_data': 'next_field_club_add_menu'}], [{'text': '*Назвнаие', 'callback_data': 'field_name'}], [{'text': '*Район', 'callback_data': 'field_district'}], [{'text': '*Работает с', 'callback_data': 'field_year'}], [{'text': '*Телефон', 'callback_data': 'field_phone'}], [{'text': '*Вступительный взнос', 'callback_data': 'field_entrance_fee'}], [{'text': 'Назад', 'callback_data': 'back_club_add_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:42:49 telegram.bot DEBUG Exiting: edit_message_text
+2020-03-01,23:42:49 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 2171
+2020-03-01,23:42:49 telegram.bot DEBUG Getting updates: [526837614]
+2020-03-01,23:42:49 telegram.bot DEBUG [<telegram.update.Update object at 0x7fa6200eae90>]
+2020-03-01,23:42:49 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:42:49 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:42:49 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837614, 'callback_query': {'id': '1838800394786297086', 'chat_instance': '-131579262626105576', 'message': {'message_id': 25711, 'date': 1583098946, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583098969, 'text': '〰〰〰〰〰〰〰〰〰〰\n✍*Назвнаие: Cool1\n      *Район: Cool1\n      *Работает с: 2001\n      *Телефон: +38-066-9551111\n      *Вступительный взнос: 2000\n〰〰〰〰〰〰〰〰〰〰', 'entities': [{'type': 'bold', 'offset': 12, 'length': 16}, {'type': 'phone_number', 'offset': 89, 'length': 15}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': '🔼', 'callback_data': 'prev_field_club_add_menu'}, {'text': 'Сохранить', 'callback_data': 'save_club_add_menu'}, {'text': '🧹 Очистить поле', 'callback_data': 'reset_field'}, {'text': '🔽', 'callback_data': 'next_field_club_add_menu'}], [{'text': '*Назвнаие', 'callback_data': 'field_name'}], [{'text': '*Район', 'callback_data': 'field_district'}], [{'text': '*Работает с', 'callback_data': 'field_year'}], [{'text': '*Телефон', 'callback_data': 'field_phone'}], [{'text': '*Вступительный взнос', 'callback_data': 'field_entrance_fee'}], [{'text': 'Назад', 'callback_data': 'back_club_add_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}, 'data': 'save_club_add_menu', 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:42:49 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:42:49 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:42:49 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:42:49 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:42:49 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:42:49 telegram.bot DEBUG Entering: answer_callback_query
+2020-03-01,23:42:49 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/answerCallbackQuery HTTP/1.1" 200 25
+2020-03-01,23:42:49 telegram.bot DEBUG True
+2020-03-01,23:42:49 telegram.bot DEBUG Exiting: answer_callback_query
+2020-03-01,23:42:49 telegram.bot DEBUG Entering: edit_message_text
+2020-03-01,23:42:49 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/editMessageText HTTP/1.1" 200 1783
+2020-03-01,23:42:49 telegram.bot DEBUG {'message_id': 25711, 'date': 1583098946, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583098969, 'text': 'Кинологические клубы\nНазвание: Cool1\nРайон города: Cool1\nРаботает с: 2001\nТелефон: +38-066-9551111\nВступительный взнос: 2000\nСтраница 1 из 1', 'entities': [{'type': 'phone_number', 'offset': 83, 'length': 15}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': '◀', 'callback_data': 'prev_object_dog_training_clubs_menu'}, {'text': 'Добавить клуб', 'callback_data': 'add_club'}, {'text': 'Редактировать кулб', 'callback_data': 'edit_club'}, {'text': '▶', 'callback_data': 'next_object_dog_training_clubs_menu'}], [{'text': 'Собаки кинологического кулба', 'callback_data': 'club_dogs'}], [{'text': 'Удалить клуб', 'callback_data': 'delete_dog_training_clubs_menu'}], [{'text': '🔙 Назад', 'callback_data': 'back_dog_training_clubs_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:42:49 telegram.bot DEBUG Exiting: edit_message_text
+2020-03-01,23:42:54 telegram.ext.updater INFO Received signal 2 (SIGINT), stopping...
+2020-03-01,23:42:54 JobQueue DEBUG JobQueue thread stopped
+2020-03-01,23:42:54 telegram.ext.updater DEBUG Stopping Updater and Dispatcher...
+2020-03-01,23:42:54 telegram.ext.updater DEBUG Requesting Dispatcher to stop...
+2020-03-01,23:49:48 telegram.ext.dispatcher DEBUG Setting singleton dispatcher as <telegram.ext.dispatcher.Dispatcher object at 0x7fad61671350>
+2020-03-01,23:49:48 telegram.ext.dispatcher DEBUG Setting singleton dispatcher as None
+2020-03-01,23:49:48 telegram.bot DEBUG Entering: get_me
+2020-03-01,23:49:48 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG Starting new HTTPS connection (1): api.telegram.org
+2020-03-01,23:49:48 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "GET /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getMe HTTP/1.1" 200 194
+2020-03-01,23:49:48 telegram.bot DEBUG {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}
+2020-03-01,23:49:48 telegram.bot DEBUG Exiting: get_me
+2020-03-01,23:49:48 JobQueue DEBUG JobQueue thread started
+2020-03-01,23:49:48 telegram.ext.updater DEBUG Bot:941255018:dispatcher - started
+2020-03-01,23:49:48 telegram.ext.updater DEBUG Bot:941255018:updater - started
+2020-03-01,23:49:48 telegram.ext.updater DEBUG Updater thread started (polling)
+2020-03-01,23:49:48 telegram.ext.updater DEBUG Start network loop retry bootstrap del webhook
+2020-03-01,23:49:48 telegram.bot DEBUG Entering: delete_webhook
+2020-03-01,23:49:48 telegram.ext.dispatcher DEBUG Dispatcher started
+2020-03-01,23:49:48 JobQueue DEBUG Putting job check_blocked_job with t=0
+2020-03-01,23:49:48 JobQueue DEBUG Ticking jobs with t=1583099388.941426
+2020-03-01,23:49:48 root INFO Check blocked users job started...
+2020-03-01,23:49:48 JobQueue DEBUG Peeked at check_blocked_job with t=1583099388.940813
+2020-03-01,23:49:48 src.app INFO Bot started
+2020-03-01,23:49:48 JobQueue DEBUG Running job check_blocked_job
+2020-03-01,23:49:48 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/deleteWebhook HTTP/1.1" 200 68
+2020-03-01,23:49:48 telegram.bot DEBUG True
+2020-03-01,23:49:48 telegram.bot DEBUG Exiting: delete_webhook
+2020-03-01,23:49:48 telegram.ext.updater DEBUG Bootstrap done
+2020-03-01,23:49:48 telegram.ext.updater DEBUG Start network loop retry getting Updates
+2020-03-01,23:49:48 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:49:48 telegram.bot DEBUG Entering: send_chat_action
+2020-03-01,23:49:48 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG Starting new HTTPS connection (2): api.telegram.org
+2020-03-01,23:49:49 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/sendChatAction HTTP/1.1" 200 25
+2020-03-01,23:49:49 telegram.bot DEBUG True
+2020-03-01,23:49:49 telegram.bot DEBUG Exiting: send_chat_action
+2020-03-01,23:49:49 JobQueue DEBUG Putting job check_blocked_job with t=7200
+2020-03-01,23:49:49 JobQueue DEBUG Peeked at check_blocked_job with t=1583106588.940813
+2020-03-01,23:49:49 JobQueue DEBUG Next task isn't due yet. Finished!
+2020-03-01,23:49:49 JobQueue DEBUG Ticking jobs with t=1583099389.311033
+2020-03-01,23:49:49 JobQueue DEBUG Peeked at check_blocked_job with t=1583106588.940813
+2020-03-01,23:49:49 JobQueue DEBUG Next task isn't due yet. Finished!
+2020-03-01,23:49:51 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 413
+2020-03-01,23:49:51 telegram.bot DEBUG Getting updates: [526837615]
+2020-03-01,23:49:51 telegram.bot DEBUG [<telegram.update.Update object at 0x7fad60147f50>]
+2020-03-01,23:49:51 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:49:51 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:49:51 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837615, 'message': {'message_id': 25717, 'date': 1583099391, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': '/start', 'entities': [{'type': 'bot_command', 'offset': 0, 'length': 6}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:49:51 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:49:51 telegram.bot DEBUG Entering: send_message
+2020-03-01,23:49:51 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/sendMessage HTTP/1.1" 200 775
+2020-03-01,23:49:51 telegram.bot DEBUG {'message_id': 25718, 'date': 1583099391, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': 'Приветствую, я бот для мониторинга кинологических клубов', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': 'Кинологические клубы', 'callback_data': 'dog_training_clubs'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:49:51 telegram.bot DEBUG Exiting: send_message
+2020-03-01,23:49:53 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 1055
+2020-03-01,23:49:53 telegram.bot DEBUG Getting updates: [526837616]
+2020-03-01,23:49:53 telegram.bot DEBUG [<telegram.update.Update object at 0x7fad600ca110>]
+2020-03-01,23:49:53 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:49:53 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:49:53 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837616, 'callback_query': {'id': '1838800395661813281', 'chat_instance': '-131579262626105576', 'message': {'message_id': 25718, 'date': 1583099391, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'text': 'Приветствую, я бот для мониторинга кинологических клубов', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': 'Кинологические клубы', 'callback_data': 'dog_training_clubs'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}, 'data': 'dog_training_clubs', 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:49:53 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:49:53 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state None
+2020-03-01,23:49:53 telegram.bot DEBUG Entering: edit_message_text
+2020-03-01,23:49:53 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/editMessageText HTTP/1.1" 200 1398
+2020-03-01,23:49:53 telegram.bot DEBUG {'message_id': 25718, 'date': 1583099391, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583099393, 'text': 'Кинологические клубы\nНазвание: Cool1\nРайон города: Cool1\nРаботает с: 2001\nТелефон: +38-066-9551111\nВступительный взнос: 2000\nСтраница 1 из 1', 'entities': [{'type': 'phone_number', 'offset': 83, 'length': 15}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': '◀', 'callback_data': 'prev_object_dog_training_clubs_menu'}, {'text': '▶', 'callback_data': 'next_object_dog_training_clubs_menu'}], [{'text': 'Собаки кинологического кулба', 'callback_data': 'club_dogs'}], [{'text': '🔙 Назад', 'callback_data': 'back_dog_training_clubs_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:49:53 telegram.bot DEBUG Exiting: edit_message_text
+2020-03-01,23:49:53 telegram.bot DEBUG Entering: answer_callback_query
+2020-03-01,23:49:53 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/answerCallbackQuery HTTP/1.1" 200 25
+2020-03-01,23:49:53 telegram.bot DEBUG True
+2020-03-01,23:49:53 telegram.bot DEBUG Exiting: answer_callback_query
+2020-03-01,23:49:55 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 1695
+2020-03-01,23:49:55 telegram.bot DEBUG Getting updates: [526837617]
+2020-03-01,23:49:55 telegram.bot DEBUG [<telegram.update.Update object at 0x7fad60064690>]
+2020-03-01,23:49:55 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:49:55 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:49:55 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837617, 'callback_query': {'id': '1838800396519587753', 'chat_instance': '-131579262626105576', 'message': {'message_id': 25718, 'date': 1583099391, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583099393, 'text': 'Кинологические клубы\nНазвание: Cool1\nРайон города: Cool1\nРаботает с: 2001\nТелефон: +38-066-9551111\nВступительный взнос: 2000\nСтраница 1 из 1', 'entities': [{'type': 'phone_number', 'offset': 83, 'length': 15}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': '◀', 'callback_data': 'prev_object_dog_training_clubs_menu'}, {'text': '▶', 'callback_data': 'next_object_dog_training_clubs_menu'}], [{'text': 'Собаки кинологического кулба', 'callback_data': 'club_dogs'}], [{'text': '🔙 Назад', 'callback_data': 'back_dog_training_clubs_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}, 'data': 'next_object_dog_training_clubs_menu', 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:49:55 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:49:55 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:49:55 telegram.bot DEBUG Entering: answer_callback_query
+2020-03-01,23:49:55 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/answerCallbackQuery HTTP/1.1" 200 25
+2020-03-01,23:49:55 telegram.bot DEBUG True
+2020-03-01,23:49:55 telegram.bot DEBUG Exiting: answer_callback_query
+2020-03-01,23:49:55 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 1695
+2020-03-01,23:49:55 telegram.bot DEBUG Getting updates: [526837618]
+2020-03-01,23:49:55 telegram.bot DEBUG [<telegram.update.Update object at 0x7fad6006dbd0>]
+2020-03-01,23:49:55 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:49:55 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:49:55 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837618, 'callback_query': {'id': '1838800394213310645', 'chat_instance': '-131579262626105576', 'message': {'message_id': 25718, 'date': 1583099391, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583099393, 'text': 'Кинологические клубы\nНазвание: Cool1\nРайон города: Cool1\nРаботает с: 2001\nТелефон: +38-066-9551111\nВступительный взнос: 2000\nСтраница 1 из 1', 'entities': [{'type': 'phone_number', 'offset': 83, 'length': 15}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': '◀', 'callback_data': 'prev_object_dog_training_clubs_menu'}, {'text': '▶', 'callback_data': 'next_object_dog_training_clubs_menu'}], [{'text': 'Собаки кинологического кулба', 'callback_data': 'club_dogs'}], [{'text': '🔙 Назад', 'callback_data': 'back_dog_training_clubs_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}, 'data': 'prev_object_dog_training_clubs_menu', 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:49:55 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:49:55 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:49:55 telegram.bot DEBUG Entering: answer_callback_query
+2020-03-01,23:49:55 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/answerCallbackQuery HTTP/1.1" 200 25
+2020-03-01,23:49:55 telegram.bot DEBUG True
+2020-03-01,23:49:55 telegram.bot DEBUG Exiting: answer_callback_query
+2020-03-01,23:49:56 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/getUpdates HTTP/1.1" 200 1688
+2020-03-01,23:49:56 telegram.bot DEBUG Getting updates: [526837619]
+2020-03-01,23:49:56 telegram.bot DEBUG [<telegram.update.Update object at 0x7fad6006da10>]
+2020-03-01,23:49:56 telegram.bot DEBUG Exiting: get_updates
+2020-03-01,23:49:56 telegram.bot DEBUG Entering: get_updates
+2020-03-01,23:49:56 telegram.ext.dispatcher DEBUG Processing Update: {'update_id': 526837619, 'callback_query': {'id': '1838800395095945281', 'chat_instance': '-131579262626105576', 'message': {'message_id': 25718, 'date': 1583099391, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583099393, 'text': 'Кинологические клубы\nНазвание: Cool1\nРайон города: Cool1\nРаботает с: 2001\nТелефон: +38-066-9551111\nВступительный взнос: 2000\nСтраница 1 из 1', 'entities': [{'type': 'phone_number', 'offset': 83, 'length': 15}], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': '◀', 'callback_data': 'prev_object_dog_training_clubs_menu'}, {'text': '▶', 'callback_data': 'next_object_dog_training_clubs_menu'}], [{'text': 'Собаки кинологического кулба', 'callback_data': 'club_dogs'}], [{'text': '🔙 Назад', 'callback_data': 'back_dog_training_clubs_menu'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}, 'data': 'back_dog_training_clubs_menu', 'from': {'id': 428129079, 'first_name': 'Влад', 'is_bot': False, 'username': 'vlad_vlaad_vlaaad', 'language_code': 'ru'}}}
+2020-03-01,23:49:56 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:49:56 telegram.ext.conversationhandler DEBUG selecting conversation (428129079, 428129079) with state States.ACTION
+2020-03-01,23:49:56 telegram.bot DEBUG Entering: answer_callback_query
+2020-03-01,23:49:56 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/answerCallbackQuery HTTP/1.1" 200 25
+2020-03-01,23:49:56 telegram.bot DEBUG True
+2020-03-01,23:49:56 telegram.bot DEBUG Exiting: answer_callback_query
+2020-03-01,23:49:56 telegram.bot DEBUG Entering: edit_message_text
+2020-03-01,23:49:56 telegram.vendor.ptb_urllib3.urllib3.connectionpool DEBUG https://api.telegram.org:443 "POST /bot941255018:AAHBRs6BoMHXnOYmVpB003V8IqybqHgHMro/editMessageText HTTP/1.1" 200 798
+2020-03-01,23:49:56 telegram.bot DEBUG {'message_id': 25718, 'date': 1583099391, 'chat': {'id': 428129079, 'type': 'private', 'username': 'vlad_vlaad_vlaaad', 'first_name': 'Влад'}, 'edit_date': 1583099396, 'text': 'Приветствую, я бот для мониторинга кинологических клубов', 'entities': [], 'caption_entities': [], 'photo': [], 'new_chat_members': [], 'new_chat_photo': [], 'delete_chat_photo': False, 'group_chat_created': False, 'supergroup_chat_created': False, 'channel_chat_created': False, 'reply_markup': {'inline_keyboard': [[{'text': 'Кинологические клубы', 'callback_data': 'dog_training_clubs'}]]}, 'from': {'id': 941255018, 'first_name': 'DebugBots', 'is_bot': True, 'username': 'debugbots_bot'}}
+2020-03-01,23:49:56 telegram.bot DEBUG Exiting: edit_message_text
+2020-03-01,23:49:58 telegram.ext.updater INFO Received signal 2 (SIGINT), stopping...
+2020-03-01,23:49:58 JobQueue DEBUG JobQueue thread stopped
+2020-03-01,23:49:58 telegram.ext.updater DEBUG Stopping Updater and Dispatcher...
+2020-03-01,23:49:58 telegram.ext.updater DEBUG Requesting Dispatcher to stop...

@@ -1,7 +1,7 @@
 import enum
 
 from botmanlib.models import Database, BaseUser, UserPermissionsMixin, BasePermission, BaseUserSession, UserSessionsMixin
-from sqlalchemy import Column, Float, Integer, Enum, String, ForeignKey, DateTime
+from sqlalchemy import Column,  Integer, Enum, String, ForeignKey, DateTime
 from sqlalchemy.orm import object_session, relationship
 
 database = Database()
@@ -59,6 +59,7 @@ class DogTrainingClub(Base):
 
     id = Column(Integer, primary_key=True)
     name = Column(String, nullable=False)
+    phone = Column(String, nullable=False)
     district = Column(String, nullable=False)
     year = Column(Integer, nullable=False)
     entrance_fee = Column(Integer, nullable=False)

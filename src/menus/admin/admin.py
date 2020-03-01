@@ -9,7 +9,7 @@ from telegram.ext import ConversationHandler, Filters, MessageHandler, CallbackQ
 
 
 from src.models import User, Permission
-# from src.menus.admin.taxation_services import ServicesMenu
+from src.menus.admin.dog_train_clubs import DogTrainingClubsMenu
 
 
 class AdminMenu(BaseMenu):
@@ -49,13 +49,14 @@ class AdminMenu(BaseMenu):
 
     def get_handler(self):
         permissions_menu = PermissionsMenu(User, Permission, parent=self)
-
+        dog_training_clubs = DogTrainingClubsMenu(self)
         handler = ConversationHandler(entry_points=[PrefixHandler('/', "admin", self.entry)],
                                       states={
                                           self.States.ACTION: [PrefixHandler('/', 'start', self.goto_next_menu),
                                                                CallbackQueryHandler(self.entry, pattern='^back$'),
                                                                CallbackQueryHandler(inline_placeholder(self.States.ACTION, "Menu is under development"), pattern="moderation"),
-                                                               permissions_menu.handler
+                                                               permissions_menu.handler,
+                                                               dog_training_clubs.handler
                                                                ],
 
                                       },
