@@ -65,6 +65,7 @@ class DogTrainingClub(Base):
     entrance_fee = Column(Integer, nullable=False)
 
     dogs = relationship("Dog", back_populates='dog_training_club', cascade='all ,delete')
+    competitions = relationship("Competition", back_populates='club', cascade='all, delete')
 
 
 class Dog(Base):
@@ -74,26 +75,16 @@ class Dog(Base):
     nickname = Column(String, nullable=False)
     breed = Column(String, nullable=False)
     year = Column(Integer, nullable=False)
-
-    owner_id = Column(Integer, ForeignKey('owners.id'))
-    owner = relationship("Owner", back_populates="dogs")
-
-    dog_training_club_id = Column(Integer, ForeignKey('dogs_training_club.id'))
-    dog_training_club = relationship("DogTrainingClub", back_populates="dogs")
-
-    competitions = relationship("Competition", secondary=DogCompetitions.__table__, back_populates="dogs", lazy='joined')
-
-
-class Owner(Base):
-    __tablename__ = 'owners'
-
-    id = Column(Integer, primary_key=True)
+    price = Column(Integer, nullable=False, default=0)
     FIO = Column(String, nullable=False)
     social_position = Column(Enum(SocialPosition), default=SocialPosition.student)
     date_of_birth = Column(DateTime, nullable=False)
     address = Column(String, nullable=False)
 
-    dogs = relationship("Dog", back_populates='owner', cascade='all ,delete')
+    dog_training_club_id = Column(Integer, ForeignKey('dogs_training_club.id'))
+    dog_training_club = relationship("DogTrainingClub", back_populates="dogs")
+
+    competitions = relationship("Competition", secondary=DogCompetitions.__table__, back_populates="dogs", lazy='joined')
 
 
 class Competition(Base):
@@ -105,6 +96,8 @@ class Competition(Base):
     contribution = Column(Integer, nullable=False)
     viewers_quantity = Column(Integer, nullable=False)
 
+    club_id = Column(Integer, ForeignKey('dogs_training_club.id'), nullable=False)
+    club = relationship("DogTrainingClub", back_populates="competitions")
     dogs = relationship("Dog", secondary=DogCompetitions.__table__, lazy='joined')
 
 

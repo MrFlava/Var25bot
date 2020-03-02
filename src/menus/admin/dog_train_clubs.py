@@ -4,15 +4,14 @@ import datetime
 from botmanlib.validators import PhoneNumber
 from botmanlib.menus import OneListMenu, ArrowAddEditMenu
 from botmanlib.menus.helpers import add_to_db, group_buttons
-from botmanlib.messages import send_or_edit
 
 from formencode import validators
 
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup
+from telegram import InlineKeyboardButton
 from telegram.ext import CallbackQueryHandler, ConversationHandler
 
 from src.models import DogTrainingClub, DBSession
-# from src.menus.admin. import
+from src.menus.admin.dogs import ClubDogsMenu
 # from src.menus.admin. import
 
 
@@ -78,8 +77,11 @@ class DogTrainingClubsMenu(OneListMenu):
 
         add_club = ClubAddMenu(self)
         edit_club = ClubEditMenu(self)
+        club_dogs_menu = ClubDogsMenu(self)
+
         return {self.States.ACTION: [add_club.handler,
-                                     edit_club.handler]}
+                                     edit_club.handler,
+                                     club_dogs_menu.handler]}
 
     def after_delete_text(self, context):
         return "Клуб удалён"

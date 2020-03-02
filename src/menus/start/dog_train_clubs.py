@@ -8,7 +8,7 @@ from telegram import InlineKeyboardButton
 from telegram.ext import CallbackQueryHandler
 
 from src.models import DogTrainingClub, DBSession
-
+from src.menus.start.dogs import ClubDogsMenu
 
 class DogTrainingClubsMenu(OneListMenu):
     menu_name = "dog_training_clubs_menu"
@@ -54,8 +54,9 @@ class DogTrainingClubsMenu(OneListMenu):
         return group_buttons(buttons, 1)
 
     def additional_states(self):
+        club_dogs_menu = ClubDogsMenu(self)
 
-        return {self.States.ACTION: []}
+        return {self.States.ACTION: [club_dogs_menu.handler]}
 
     def after_delete_text(self, context):
         return "Клуб удалён"
